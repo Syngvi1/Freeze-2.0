@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redigera bokning</title>
+    <link rel="stylesheet" href="static/edit_booking.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Redigera bokning</h1>
+
+        <!-- Single form to edit all fields at once -->
+        <form action="edit-confirmation/index.html" method="GET">
+            <label for="school-name">Namn på skola:</label>
+            <input type="text" id="school-name" name="school-name" value="School Name" >
+
+            <label for="address">Adress:</label>
+            <input type="text" id="address" name="address" value="Address" >
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" value="Phone Number" >
+
+            <label for="local">Lokal:</label>
+            <input type="text" id="local" name="local" value="Lokal">
+
+            <label for="equipment">Utrustning:</label>
+            <input type="text" id="equipment" name="equipment" value="Equipment">
+
+            <label for="limitations">Begränsningar:</label>
+            <input type="text" id="limitations" name="limitations" value="Limitations">
+
+            <label for="rules">Regler:</label>
+            <textarea id="rules" name="rules">Rules</textarea>
+
+            <label for="date">Välj ett datum:</label>
+            <input type="date" id="date" name="date" value="2024-01-01" >
+
+            <label for="time-slot">Välj ett tidsintervall:</label>
+            <select id="time-slot" name="time-slot">
+                <option value="10:00-12:00">10:00 - 12:00</option>
+                <option value="12:00-14:00">12:00 - 14:00</option>
+            </select>
+
+            <!-- Submit button to save all changes and redirect -->
+            <button type="submit">Spara ändringar</button>
+        </form>
+
+        <a href="kontacted-schools/index.html">Tillbaka till bokningar</a>
+    </div>
+</body>
+</html>
